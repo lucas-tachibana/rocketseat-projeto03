@@ -22,9 +22,41 @@
       </header>
       <form action="post">
         <fieldset>
-          <legend>Informações do Evento</legend>
+          <div class="fieldset-wrapper">
+            <legend>Informações do Evento</legend>
+
+            <div class="input-wrapper">
+              <label for="event-title">Título do evento <span>(mínimo 8
+                  caracteres)</span></label>
+              <input type="text" id="event-title">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-link">Link do evento <span>(comece com https://)</span></label>
+              <input type="text" id="event-link">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-whatsapp">Whatsapp para contato <span>(somente
+                  números)</span></label>
+              <input type="text" id="event-whatsapp">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-info">Informações extras</label>
+              <textarea type="text" id="event-info"></textarea>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-category">Categoria</label>
+              <select id="event-category">
+                <option value="live">Ao vivo</option>
+                <option value="podcast">Podcast</option>
+                <option value="mentorship">Mentoria</option>
+              </select>
+            </div>
+          </div>
         </fieldset>
-        <!-- TODO criar os inputs do formulário -->
       </form>
     </div>
   </body>
